@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+const logWhenClicked = () => console.log("this is my message");
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App onClick = {logWhenClicked}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
